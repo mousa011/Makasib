@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.626" height="82.554" viewBox="0 0 85.626 82.554">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="1.795" gradientTransform="matrix(0.687, -0.727, 0.614, 0.58, -0.15, 0.573)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00bac7"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.5" x2="2.386" y2="2.7" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1faab4"/>
+      <stop offset="1" stop-color="#254399"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_2" transform="translate(-345.188 -1886.447)">
+    <path id="Polygon_14" data-name="Polygon 14" d="M46.419,0a5,5,0,0,1,4.338,2.514L64.33,26.194a5,5,0,0,1,0,4.973L50.757,54.847a5,5,0,0,1-4.338,2.514H19.336A5,5,0,0,1,15,54.847L1.425,31.167a5,5,0,0,1,0-4.973L15,2.514A5,5,0,0,1,19.336,0Z" transform="translate(345.188 1919.324) rotate(-30)" fill="url(#radial-gradient)"/>
+    <g id="vuesax_bulk_medal" data-name="vuesax/bulk/medal" transform="translate(370.789 1910.497)">
+      <g id="vuesax_bulk_medal-2" data-name="vuesax/bulk/medal">
+        <g id="medal">
+          <path id="Vector" d="M33.577,0V33.577H0V0Z" opacity="0" fill="url(#linear-gradient)"/>
+          <path id="Vector-2" data-name="Vector" d="M9.444,18.188A9.274,9.274,0,0,1,0,9.094,9.274,9.274,0,0,1,9.444,0a9.274,9.274,0,0,1,9.444,9.094A9.274,9.274,0,0,1,9.444,18.188Z" transform="translate(7.345 2.798)" fill="url(#linear-gradient)"/>
+          <path id="Vector-3" data-name="Vector" d="M.014.252,0,10.577c0,1.259.881,1.875,1.973,1.357l3.749-1.777a1.448,1.448,0,0,1,1.133,0l3.763,1.777c1.077.5,1.973-.1,1.973-1.357V0" transform="translate(10.507 18.663)" opacity="0.4" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

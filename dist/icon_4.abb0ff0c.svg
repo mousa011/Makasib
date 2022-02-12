@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.626" height="82.554" viewBox="0 0 85.626 82.554">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="1.795" gradientTransform="matrix(0.687, -0.727, 0.614, 0.58, -0.15, 0.573)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00bac7"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.5" x2="2.386" y2="2.7" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1faab4"/>
+      <stop offset="1" stop-color="#254399"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_4" transform="translate(-669.187 -1886.447)">
+    <path id="Polygon_12" data-name="Polygon 12" d="M46.419,0a5,5,0,0,1,4.338,2.514L64.33,26.194a5,5,0,0,1,0,4.973L50.757,54.847a5,5,0,0,1-4.338,2.514H19.336A5,5,0,0,1,15,54.847L1.425,31.167a5,5,0,0,1,0-4.973L15,2.514A5,5,0,0,1,19.336,0Z" transform="translate(669.187 1919.324) rotate(-30)" fill="url(#radial-gradient)"/>
+    <g id="vuesax_bulk_lock" data-name="vuesax/bulk/lock" transform="translate(695.211 1910.935)">
+      <g id="vuesax_bulk_lock-2" data-name="vuesax/bulk/lock">
+        <g id="lock">
+          <path id="Vector" d="M33.577,0V33.577H0V0Z" opacity="0" fill="url(#linear-gradient)"/>
+          <path id="Vector-2" data-name="Vector" d="M18.887,12.382a18.166,18.166,0,0,0-2.1-.14v-2.8c0-4.407-1.245-7.345-7.345-7.345S2.1,5.037,2.1,9.444v2.8a18.165,18.165,0,0,0-2.1.14V9.444C0,5.386.979,0,9.444,0s9.444,5.386,9.444,9.444Z" transform="translate(7.345 1.749)" fill="url(#linear-gradient)"/>
+          <path id="Vector-3" data-name="Vector" d="M27.981,9.793c0,5.6-1.4,7-7,7H7c-5.6,0-7-1.4-7-7V7C0,2.322.979.574,4.547.14A18.166,18.166,0,0,1,6.645,0h14.69a18.166,18.166,0,0,1,2.1.14C27,.574,27.981,2.322,27.981,7Z" transform="translate(2.798 13.99)" opacity="0.4" fill="url(#linear-gradient)"/>
+          <g id="Group" transform="translate(9.793 20.987)">
+            <path id="Vector-4" data-name="Vector" d="M.867,2.685a1.444,1.444,0,0,1-.462-.294A1.471,1.471,0,0,1,0,1.4,1.393,1.393,0,0,1,.112.866,1.616,1.616,0,0,1,.406.4,1.444,1.444,0,0,1,.867.11,1.4,1.4,0,0,1,2.392.4a1.616,1.616,0,0,1,.294.462A1.393,1.393,0,0,1,2.8,1.4a1.471,1.471,0,0,1-.406.993A1.471,1.471,0,0,1,1.4,2.8,1.393,1.393,0,0,1,.867,2.685Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+          </g>
+          <g id="Group-2" data-name="Group" transform="translate(15.39 21.003)">
+            <path id="Vector-5" data-name="Vector" d="M.406,2.375a1.616,1.616,0,0,1-.294-.462A1.393,1.393,0,0,1,0,1.382,1.445,1.445,0,0,1,.406.388a1.465,1.465,0,0,1,1.987,0,1.445,1.445,0,0,1,.406.993,1.393,1.393,0,0,1-.112.532,1.616,1.616,0,0,1-.294.462,1.471,1.471,0,0,1-.993.406A1.445,1.445,0,0,1,.406,2.375Z" fill="url(#linear-gradient)"/>
+          </g>
+          <g id="Group-3" data-name="Group" transform="translate(20.986 21.003)">
+            <path id="Vector-6" data-name="Vector" d="M.406,2.375A1.445,1.445,0,0,1,0,1.382,1.445,1.445,0,0,1,.406.388a1.465,1.465,0,0,1,1.987,0c.056.07.112.14.168.224A.778.778,0,0,1,2.686.85.889.889,0,0,1,2.77,1.1a2.1,2.1,0,0,1,.028.28,1.471,1.471,0,0,1-.406.993,1.471,1.471,0,0,1-.993.406A1.471,1.471,0,0,1,.406,2.375Z" fill="url(#linear-gradient)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

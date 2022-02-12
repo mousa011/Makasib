@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.626" height="82.554" viewBox="0 0 85.626 82.554">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="1.795" gradientTransform="matrix(0.687, -0.727, 0.614, 0.58, -0.15, 0.573)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00bac7"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.5" x2="2.386" y2="2.7" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1faab4"/>
+      <stop offset="1" stop-color="#254399"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_3" transform="translate(-508.187 -1886.447)">
+    <path id="Polygon_13" data-name="Polygon 13" d="M46.419,0a5,5,0,0,1,4.338,2.514L64.33,26.194a5,5,0,0,1,0,4.973L50.757,54.847a5,5,0,0,1-4.338,2.514H19.336A5,5,0,0,1,15,54.847L1.425,31.167a5,5,0,0,1,0-4.973L15,2.514A5,5,0,0,1,19.336,0Z" transform="translate(508.187 1919.324) rotate(-30)" fill="url(#radial-gradient)"/>
+    <g id="vuesax_bulk_monitor" data-name="vuesax/bulk/monitor" transform="translate(534.335 1910.497)">
+      <g id="vuesax_bulk_monitor-2" data-name="vuesax/bulk/monitor">
+        <g id="monitor">
+          <path id="Vector" d="M27.939,15.264H0V6.17A6.18,6.18,0,0,1,6.17,0h15.6a6.18,6.18,0,0,1,6.17,6.17Z" transform="translate(2.798 2.798)" opacity="0.4" fill="url(#linear-gradient)"/>
+          <path id="Vector-2" data-name="Vector" d="M0,.28A6.171,6.171,0,0,0,6.17,6.45h5.372a1.4,1.4,0,0,1,1.4,1.4V9.206a1.4,1.4,0,0,1-1.4,1.4H8.156a1.049,1.049,0,1,0,0,2.1H19.839a1.049,1.049,0,1,0,0-2.1H16.453a1.4,1.4,0,0,1-1.4-1.4V7.849a1.4,1.4,0,0,1,1.4-1.4h5.33A6.171,6.171,0,0,0,27.953.28V0H0Z" transform="translate(2.798 18.076)" fill="url(#linear-gradient)"/>
+          <path id="Vector-3" data-name="Vector" d="M33.577,0V33.577H0V0Z" opacity="0" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
