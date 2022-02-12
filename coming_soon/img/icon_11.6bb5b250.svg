@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.626" height="82.554" viewBox="0 0 85.626 82.554">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="1.795" gradientTransform="matrix(0.687, -0.727, 0.614, 0.58, -0.15, 0.573)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00bac7"/>
+    </radialGradient>
+  </defs>
+  <g id="icon_11" transform="translate(-422.707 -2483.935)">
+    <path id="Polygon_26" data-name="Polygon 26" d="M46.419,0a5,5,0,0,1,4.338,2.514L64.33,26.194a5,5,0,0,1,0,4.973L50.757,54.847a5,5,0,0,1-4.338,2.514H19.336A5,5,0,0,1,15,54.847L1.425,31.167a5,5,0,0,1,0-4.973L15,2.514A5,5,0,0,1,19.336,0Z" transform="translate(422.707 2516.813) rotate(-30)" fill="url(#radial-gradient)"/>
+    <g id="vuesax_bulk_wallet-check" data-name="vuesax/bulk/wallet-check" transform="translate(448.73 2508.423)">
+      <g id="vuesax_bulk_wallet-check-2" data-name="vuesax/bulk/wallet-check">
+        <g id="wallet-check">
+          <path id="Vector" d="M33.577,0V33.577H0V0Z" fill="#fff" opacity="0"/>
+          <path id="Vector-2" data-name="Vector" d="M5.5,11A5.494,5.494,0,0,1,.8,8.332,5.387,5.387,0,0,1,0,5.5a5.5,5.5,0,0,1,11,0,5.377,5.377,0,0,1-.8,2.833A5.491,5.491,0,0,1,5.5,11ZM3.217,4.609a1.031,1.031,0,0,0-.729,1.756L3.85,7.727a1.025,1.025,0,0,0,.729.3,1.061,1.061,0,0,0,.7-.275L8.208,5.046a1.029,1.029,0,0,0,.327-.723,1.016,1.016,0,0,0-.272-.735,1.042,1.042,0,0,0-.76-.327,1.016,1.016,0,0,0-.7.273l-2.2,2.034-.66-.66A1.021,1.021,0,0,0,3.217,4.609Z" transform="translate(1.269 20.562)" fill="#fff"/>
+          <path id="Vector-3" data-name="Vector" d="M15.124,7H1.133A7.446,7.446,0,0,0,0,7.079,4.257,4.257,0,0,1,.811,5.988L5.358,1.427a4.932,4.932,0,0,1,6.939,0L14.746,3.9a4.721,4.721,0,0,1,1.427,3.162A6.4,6.4,0,0,0,15.124,7Z" transform="translate(8.659 2.798)" fill="#fff"/>
+          <path id="Vector-4" data-name="Vector" d="M27.981,13.99a6.609,6.609,0,0,1-7,7H7.877a5.027,5.027,0,0,0,1.105-1.315,5.486,5.486,0,0,0,.811-2.882A5.591,5.591,0,0,0,0,13.1V7C0,3.19,2.294.532,5.862.084A7.446,7.446,0,0,1,7,0h13.99a6.4,6.4,0,0,1,1.049.07C25.645.49,27.981,3.162,27.981,7Z" transform="translate(2.798 9.793)" fill="#fff" opacity="0.4"/>
+          <path id="Vector-5" data-name="Vector" d="M7,0H2.8a2.8,2.8,0,1,0,0,5.6H7" transform="translate(23.784 17.488)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

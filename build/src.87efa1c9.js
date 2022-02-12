@@ -7022,6 +7022,72 @@ $xqrD$var$enableDismissTrigger($xqrD$export$Toast);
  */
 
 $xqrD$var$defineJQueryPlugin($xqrD$export$Toast);
+//selecting all required elements
+var $Focm$var$dropArea = document.querySelector(".drag-area"),
+    $Focm$var$dragText = $Focm$var$dropArea.querySelector("header"),
+    $Focm$var$button = $Focm$var$dropArea.querySelector("button"),
+    $Focm$var$input = $Focm$var$dropArea.querySelector("input");
+var $Focm$var$file; //this is a global variable and we'll use it inside multiple functions
+
+$Focm$var$button.onclick = function () {
+  $Focm$var$input.click(); //if user click on the button then the input also clicked
+};
+
+$Focm$var$input.addEventListener("change", function () {
+  //getting user select file and [0] this means if user select multiple files then we'll select only the first one
+  $Focm$var$file = this.files[0];
+  $Focm$var$dropArea.classList.add("active");
+  $Focm$var$showFile(); //calling function
+}); //If user Drag File Over DropArea
+
+$Focm$var$dropArea.addEventListener("dragover", function (event) {
+  event.preventDefault(); //preventing from default behaviour
+
+  $Focm$var$dropArea.classList.add("active");
+  $Focm$var$dragText.textContent = "Release to Upload File";
+}); //If user leave dragged File from DropArea
+
+$Focm$var$dropArea.addEventListener("dragleave", function () {
+  $Focm$var$dropArea.classList.remove("active");
+  $Focm$var$dragText.textContent = "Drag & Drop to Upload File";
+}); //If user drop File on DropArea
+
+$Focm$var$dropArea.addEventListener("drop", function (event) {
+  event.preventDefault(); //preventing from default behaviour
+  //getting user select file and [0] this means if user select multiple files then we'll select only the first one
+
+  $Focm$var$file = event.dataTransfer.files[0];
+  $Focm$var$showFile(); //calling function
+});
+
+function $Focm$var$showFile() {
+  var fileType = $Focm$var$file.type; //getting selected file type
+
+  var validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //adding some valid image extensions in array
+
+  if (validExtensions.includes(fileType)) {
+    //if user selected file is an image file
+    var fileReader = new FileReader(); //creating new FileReader object
+
+    fileReader.onload = function () {
+      var fileURL = fileReader.result; //passing user file source in fileURL variable
+      // UNCOMMENT THIS BELOW LINE. I GOT AN ERROR WHILE UPLOADING THIS POST SO I COMMENTED IT
+      // let imgTag = `<img src="${fileURL}" alt="image">`; //creating an img tag and passing user selected file source inside src attribute
+
+      $Focm$var$dropArea.innerHTML = imgTag; //adding that created img tag inside dropArea container
+    };
+
+    fileReader.readAsDataURL($Focm$var$file);
+  } else {
+    alert("This is not an Image File!");
+    $Focm$var$dropArea.classList.remove("active");
+    $Focm$var$dragText.textContent = "Drag & Drop to Upload File";
+  }
+} // var rtlcss = require('rtlcss');
+// var result = rtlcss.process("body { direction:ltr; }");
+// //result == body { direction:rtl; }
+
+
 return {
   "Focm": {}
 };

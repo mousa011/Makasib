@@ -1,473 +1,483 @@
 <!doctype html>
 <html lang="ar" dir="">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="/custom.18d3a4a7.css">
-    
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-       </style>
-  </head>
-  <body>
-    <header class="p-3">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img alt="logo" src="/logo.f1d8a4c6.svg" class="img-fluid mx-auto">
-          </a>
-  
-          <ul class="nav col-12 col-lg-auto mx-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">الرئيسية</a></li>
-            <li><a href="#" class="nav-link px-2 text-secondary">طالب تمويل</a></li>
-            <li><a href="#" class="nav-link px-2 text-secondary">مستثمر</a></li>
-            <li><a href="#" class="nav-link px-2 text-secondary">من نحن</a></li>
-          </ul>
-  
-          <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-          </form> -->
-  
-          <div class="text-end">
-            <!-- <button type="button" class="btn btn-outline-light me-2">Login</button> -->
-            <button type="button" class="btn btn_custom btn-dark border-0 px-4">تسجيل الدخول</button>
-          </div>
-        </div>
-      </div>
+<body>
+    <header class="py-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img alt="logo" src="/logo.f1d8a4c6.svg" class="img-fluid mx-auto"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">طالب تمويل</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                        مستثمر
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">من نحن</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button type="button" class="btn btn_custom btn-rounded btn-dark border-0 px-4">تسجيل الدخول</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-
     <main>
-
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <defs>
-                <linearGradient id="linear-gradient" gradientUnits="objectBoundingBox">
-                  <stop offset="0" stop-color="#1faab4"></stop>
-                  <stop offset="1" stop-color="#254399"></stop>
-                </linearGradient>
-              </defs>
-              <rect data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient)"></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>وجهتك للفرص الاستثمارية</h1>
-                <p>
-                  سعياً نحو مستقبلٍ ذا نموٍّ وتنوِّعٍ اقتصاديٍّ مُشرق.
-                </p>
-                <!-- <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p> -->
-              </div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <defs>
-                <linearGradient id="linear-gradient2" gradientUnits="objectBoundingBox">
-                  <stop offset="0" stop-color="#1faab4"></stop>
-                  <stop offset="1" stop-color="#254399"></stop>
-                </linearGradient>
-              </defs>
-              <rect data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient2)"></rect>
-            </svg>
-              <rect id="Rectangle_3240" data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient)">
-            
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>وجهتك للفرص الاستثمارية</h1>
-                <p>
-                  سعياً نحو مستقبلٍ ذا نموٍّ وتنوِّعٍ اقتصاديٍّ مُشرق.
-                </p>
-                <!-- <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p> -->
-              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <defs>
+                        <linearGradient id="linear-gradient" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#1faab4"></stop>
+                           <stop offset="1" stop-color="#254399"></stop>
+                        </linearGradient>
+                     </defs>
+                     <rect data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient)"></rect>
+                  </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>وجهتك للفرص الاستثمارية</h1>
+                            <p class="text-white">
+                                سعياً نحو مستقبلٍ ذا نموٍّ وتنوِّعٍ اقتصاديٍّ مُشرق.
+                            </p>
+                            <!-- <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <defs>
+                        <linearGradient id="linear-gradient2" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#1faab4"></stop>
+                           <stop offset="1" stop-color="#254399"></stop>
+                        </linearGradient>
+                     </defs>
+                     <rect data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient2)"></rect>
+                  </svg>
+                    <rect id="Rectangle_3240" data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient)">
+                    
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>وجهتك للفرص الاستثمارية</h1>
+                            <p class="text-white">
+                                سعياً نحو مستقبلٍ ذا نموٍّ وتنوِّعٍ اقتصاديٍّ مُشرق.
+                            </p>
+                            <!-- <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p> -->
+                        </div>
+                    </div>
+                </rect></div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <defs>
+                        <linearGradient id="linear-gradient3" gradientUnits="objectBoundingBox">
+                           <stop offset="0" stop-color="#1faab4"></stop>
+                           <stop offset="1" stop-color="#254399"></stop>
+                        </linearGradient>
+                     </defs>
+                     <rect data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient3)"></rect>
+                  </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>وجهتك للفرص الاستثمارية</h1>
+                            <p class="text-white">
+                                سعياً نحو مستقبلٍ ذا نموٍّ وتنوِّعٍ اقتصاديٍّ مُشرق.
+                            </p>
+                            <!-- <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-          </rect></div>
-          <div class="carousel-item bg-green">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <defs>
-                <linearGradient id="linear-gradient3" gradientUnits="objectBoundingBox">
-                  <stop offset="0" stop-color="#1faab4"></stop>
-                  <stop offset="1" stop-color="#254399"></stop>
-                </linearGradient>
-              </defs>
-              <rect data-name="Rectangle 3240" width="100%" height="100%" fill="url(#linear-gradient3)"></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>وجهتك للفرص الاستثمارية</h1>
-                <p>
-                  سعياً نحو مستقبلٍ ذا نموٍّ وتنوِّعٍ اقتصاديٍّ مُشرق.
-                </p>
-                <!-- <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p> -->
-              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+            </button>
+        </div>
+        <div class="container marketing mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4>الفرص الاستثمارية</h4>
+                        <h6><a href="#"> عرض المزيد <i class="fa fa-chevron-left px-2"></i></a></h6>
+                    </div>
+                    <!-- Three columns of text below the carousel -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow-sm border-0 h-100 wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <img src="/deal_1.2d7095c8.svg" class="card-img-top" alt="deal">
+                                <div class="card-body">
+                                    <img src="/thumbnail.b672cf28.png" class="img-thumbnail img_thumbnail_custom shadow-sm mb-3" intrinsicsize="250 x 200" alt="thumbnail">
+                                    <h5 class="card-title">ذا ويرهاوس | The Warehouse</h5>
+                                    <p class="card-text">أول منصة سعودية تربط صغار المؤثرين بالعلامات التجارية</p>
+                                    <ul class="nav nav-fill mt-4 align-items-center">
+                                        <li class="nav-item text-start">
+                                            <h6>
+                                                المبلغ المستهدف
+                                                <p class="d-block py-1">
+                                                    400,000 ريال
+                                                </p>
+                                            </h6>
+                                        </li>
+                                        <li class="nav-item text-start">
+                                            <h6>
+                                                المبلغ المتبقي
+                                                <p class="d-block py-1">
+                                                    200.000 ريال
+                                                </p>
+                                            </h6>
+                                        </li>
+                                        <li class="nav-item" style="width:3rem;">
+                                            <p style=" border:1px solid #00BAC7; background: #E0F7F8; padding: .5rem; border-radius: 10px;">
+                                                <span class="fa-2x"> 
+                                       90
+                                       </span>
+                                                <small class="d-block">
+                                       يوم متبقي</small>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <div class="card shadow-sm border-0 h-100 wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <img src="/deal_1.2d7095c8.svg" class="card-img-top" alt="deal">
+                                <div class="card-body">
+                                    <img src="/thumbnail.b672cf28.png" class="img-thumbnail img_thumbnail_custom shadow-sm mb-3" intrinsicsize="250 x 200" alt="thumbnail">
+                                    <h5 class="card-title">ذا ويرهاوس | The Warehouse</h5>
+                                    <p class="card-text">أول منصة سعودية تربط صغار المؤثرين بالعلامات التجارية</p>
+                                    <ul class="nav nav-fill mt-4 align-items-center">
+                                        <li class="nav-item text-start">
+                                            <h6>
+                                                المبلغ المستهدف
+                                                <p class="d-block py-1">
+                                                    400,000 ريال
+                                                </p>
+                                            </h6>
+                                        </li>
+                                        <li class="nav-item text-start">
+                                            <h6>
+                                                المبلغ المتبقي
+                                                <p class="d-block py-1">
+                                                    200.000 ريال
+                                                </p>
+                                            </h6>
+                                        </li>
+                                        <li class="nav-item" style="width:3rem;">
+                                            <p style=" border:1px solid #00BAC7; background: #E0F7F8; padding: .5rem; border-radius: 10px;">
+                                                <span class="fa-2x"> 
+                                       90
+                                       </span>
+                                                <small class="d-block">
+                                       يوم متبقي</small>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <div class="card shadow-sm border-0 h-100 wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <img src="/deal_1.2d7095c8.svg" class="card-img-top" alt="deal">
+                                <div class="card-body">
+                                    <img src="/thumbnail.b672cf28.png" class="img-thumbnail img_thumbnail_custom shadow-sm mb-3" intrinsicsize="250 x 200" alt="thumbnail">
+                                    <h5 class="card-title">ذا ويرهاوس | The Warehouse</h5>
+                                    <p class="card-text">أول منصة سعودية تربط صغار المؤثرين بالعلامات التجارية</p>
+                                    <ul class="nav nav-fill mt-4 align-items-center">
+                                        <li class="nav-item text-start">
+                                            <h6>
+                                                المبلغ المستهدف
+                                                <p class="d-block py-1">
+                                                    400,000 ريال
+                                                </p>
+                                            </h6>
+                                        </li>
+                                        <li class="nav-item text-start">
+                                            <h6>
+                                                المبلغ المتبقي
+                                                <p class="d-block py-1">
+                                                    200.000 ريال
+                                                </p>
+                                            </h6>
+                                        </li>
+                                        <li class="nav-item" style="width:3rem;">
+                                            <p style=" border:1px solid #00BAC7; background: #E0F7F8; padding: .5rem; border-radius: 10px;">
+                                                <span class="fa-2x"> 
+                                       90
+                                       </span>
+                                                <small class="d-block">
+                                       يوم متبقي</small>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
             </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">السابق</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">التالي</span>
-        </button>
-      </div>
-  
-      <div class="container marketing mt-5">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-11">
-        <div class="d-flex justify-content-between mb-2">
-        <h4>الفرص الاستثمارية</h4>
-        <h6>عرض المزيد</h6></div>
-        <!-- Three columns of text below the carousel -->
-  
-          
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img src="/deal_1.2d7095c8.svg" class="card-img-top" alt="deal">
-              <div class="card-body">
-                <img src="/thumbnail.b672cf28.png" class="img-thumbnail img_thumbnail_custom shadow-sm mb-3" intrinsicsize="250 x 200" alt="thumbnail">
-                <h5 class="card-title">ذا ويرهاوس | The Warehouse</h5>
-                <p class="card-text">أول منصة سعودية تربط صغار المؤثرين بالعلامات التجارية</p>
-                <ul class="nav nav-fill mt-4 align-items-center">
-                  <li class="nav-item text-start">
-                    <p>المبلغ المستهدف
-                      <span class="d-block"> 
-                      400,000 ريال
-                      </span>
-                                      </p>
-                  </li>
-                  <li class="nav-item text-start">
-                    <p>المبلغ المتبقي
-                      <span class="d-block"> 
-                      200.000 ريال
-                                    </span>  </p>
-                  </li>
-                  <li class="nav-item" style="width:2rem;">
-                    <p style=" border:1px solid #234506; padding: .5rem; border-radius: 10px;">
-                     <span class="fa-2x"> 
-                       90
-                    </span> 
-                    <small class="d-block">
-                      يوم متبقي</small>
-                                      </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-              </div>
-            </div>   
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img src="/deal_1.2d7095c8.svg" class="card-img-top" alt="deal">
-              <div class="card-body">
-                <img src="/thumbnail.b672cf28.png" class="img-thumbnail img_thumbnail_custom shadow-sm mb-3" intrinsicsize="250 x 200" alt="thumbnail">
-                <h5 class="card-title">ذا ويرهاوس | The Warehouse</h5>
-                <p class="card-text">أول منصة سعودية تربط صغار المؤثرين بالعلامات التجارية</p>
-                <ul class="nav nav-fill mt-4 align-items-center">
-                  <li class="nav-item text-start">
-                    <p>المبلغ المستهدف
-                      <span class="d-block"> 
-                      400,000 ريال
-                      </span>
-                                      </p>
-                  </li>
-                  <li class="nav-item text-start">
-                    <p>المبلغ المتبقي
-                      <span class="d-block"> 
-                      200.000 ريال
-                                    </span>  </p>
-                  </li>
-                  <li class="nav-item" style="width:2rem;">
-                    <p style=" border:1px solid #234506; padding: .5rem; border-radius: 10px;">
-                     <span class="fa-2x"> 
-                       90
-                    </span> 
-                    <small class="d-block">
-                      يوم متبقي</small>
-                                      </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-              </div>
-            </div>   
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img src="/deal_1.2d7095c8.svg" class="card-img-top" alt="deal">
-              <div class="card-body">
-                <img src="/thumbnail.b672cf28.png" class="img-thumbnail img_thumbnail_custom shadow-sm mb-3" intrinsicsize="250 x 200" alt="thumbnail">
-                <h5 class="card-title">ذا ويرهاوس | The Warehouse</h5>
-                <p class="card-text">أول منصة سعودية تربط صغار المؤثرين بالعلامات التجارية</p>
-                <ul class="nav nav-fill mt-4 align-items-center">
-                  <li class="nav-item text-start">
-                    <p>المبلغ المستهدف
-                      <span class="d-block"> 
-                      400,000 ريال
-                      </span>
-                                      </p>
-                  </li>
-                  <li class="nav-item text-start">
-                    <p>المبلغ المتبقي
-                      <span class="d-block"> 
-                      200.000 ريال
-                                    </span>  </p>
-                  </li>
-                  <li class="nav-item" style="width:2rem;">
-                    <p style=" border:1px solid #234506; padding: .5rem; border-radius: 10px;">
-                     <span class="fa-2x"> 
-                       90
-                    </span> 
-                    <small class="d-block">
-                      يوم متبقي</small>
-                                      </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-              </div>
-            </div>   
-          </div><!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-        
-        </div>
-        </div>
-      </div>
-      <!-- /.container -->
-    
-    
-      <section class="py-5 text-center">
-     <div class="w-100 d-flex justify-content-end container">
-       <img src="/graphic_1.89ca26b3.svg"> 
-     </div>
-      <div class="container-fluid px-0 bg-light">
-        <div class="container about_makasab_s py-5">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h3 class="fw-bold mb-3">مثال الألبوم</h3>
-            <p class="lead text-muted fw-light">وصف قصير حول الألبوم أدناه (محتوياته ، ومنشؤه ، وما إلى ذلك). اجعله قصير ولطيف، ولكن ليست قصير جدًا حتى لا يتخطى الناس هذا الألبوم تمامًا.</p>
-            <!-- <p>
-              <a href="#" class="btn btn-primary my-2">الدعوة الرئيسية للعمل</a>
-              <a href="#" class="btn btn-secondary my-2">عمل ثانوي</a>
-            </p> -->
-          </div>
-        </div>  
-      </div>     
-      </div>
-      </section>
-
-
-      <div class="container marketing mt-5">
-     
-        <div class="row justify-content-center">
-          <div class="col-lg-11">
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body p-0">
-                <h5 class="card-title card_title_img mb-3 text-white">طالب التمويل</h5>
-                <div class="row mb-3 text-center px-3">
-                  <div class="col">
-                    <img alt="logo" src="/icon_1.46bb5cae.svg" class="img-fluid mx-auto">
-                 <p> التسجيل</p>
-                  </div>
-                  <div class="col">
-                    <img alt="logo" src="/icon_2.e1856a4b.svg" class="img-fluid mx-auto">
-                    <p> أرفق ملفك التعريفي وأوراق المنشأة
-                    </p>
-                  </div>
-                  <div class="col">
-                    <img alt="logo" src="/icon_3.4d05d59d.svg" class="img-fluid mx-auto">
-                    <p> أرفق معلومات مشروعك
-                    </p>
-                  </div>
-                  <div class="col">
-                    <img alt="logo" src="/icon_4.abb0ff0c.svg" class="img-fluid mx-auto">
-                    <p> تحصل على الاستثمار
-                    </p>
-                  </div>
-                </div>
-
-               
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-              </div> <h5 class="pt-3 pb-2 border-top text-end px-3 mx-3">احصل على التمويل</h5>
-            </div>   
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body p-0">
-                <h5 class="card-title card_title_img mb-3 text-white">المستثمر</h5>
-                <div class="row mb-3 text-center px-3">
-                  <div class="col">
-                    <img alt="logo" src="/icon_5.3c949fd2.svg" class="img-fluid mx-auto">
-                      <p> التسجيل</p>
-                  </div>
-                  <div class="col">
-                    <img alt="logo" src="/icon_6.0e15e5e4.svg" class="img-fluid mx-auto">
-                    <p> تصفح الفرص المتاحة
-                    </p>
-                  </div>
-                  <div class="col">
-                    <img alt="logo" src="/icon_7.76ef2b8a.svg" class="img-fluid mx-auto">
-                    <p>  الحصول على شهادة الاستثمار
-                    </p>
-                  </div>
-                </div>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-              </div><h5 class="pt-3 pb-2 border-top text-end px-3 mx-3">إبدأ الاستثمار</h5>
-            </div>   
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-</div>
-</div>
-    
-      </div><!-- /.container -->
-    
-
-
-        <section class="container mt-5 pb-5 text-center featured-3">
-        <h3 class="text-white">من فوائد التمويل العقاري الجماعي</h3>
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-9">
-            <div class="row g-4 py-5 row-cols-2 row-cols-lg-4 text-center">
-             <div class="feature col">
-                <div class="feature-icon">
-                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
-                  <img alt="logo" src="/icon_8.0a3e3e08.svg" class="img-fluid mx-auto">
-                </div>
-                <!-- <h2>Featured title</h2> -->
-              <p class="text-white">
-                يوفر لك دخل شهري كما أنه يعد استثمار ثابت عند وجود تقلبات مالية واقتصادية
-              </p>            
-              </div>
-              <div class="feature col">
-                <div class="feature-icon">
-                      <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
-                      <img alt="logo" src="/icon_9.abf4caf1.svg" class="img-fluid mx-auto">
-                </div>
-                <!-- <h2>Featured title</h2> -->
-                <p class="text-white">
-                  خطة واضحة للتخارج في الإستثمارات العقارية محددة بزمن معين
-                </p>
-                
-              </div>
-              <div class="feature col">
-                <div class="feature-icon">
-                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
-                    <img alt="logo" src="/icon_10.cd0ce792.svg" class="img-fluid mx-auto">
-                </div>
-                <!-- <h2>Featured title</h2> -->
-              <p class="text-white">
-                العائد من العقار ليس فقط من الإيجار بل إن قيمة الاستثمار الذي يزيد مع مرور الوقت
-              </p>            
-              </div>
-              <div class="feature col">
-                <div class="feature-icon">
-                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
-                    <img alt="logo" src="/icon_11.39cd0c6b.svg" class="img-fluid mx-auto">
-                </div>
-                <!-- <h2>Featured title</h2> -->
-                <p class="text-white">
-                  أي مصروف إضافي من قبل الملاك أو المستأجر على العقار يزيد من قيمته السوقية
-                </p>            
-              </div>
+        <!-- /.container -->
+        <section class="py-5 text-center">
+            <div class="w-100 d-flex justify-content-end container">
+                <img src="/graphic_1.89ca26b3.svg">
             </div>
-          </div>
-        </div>
+            <div class="container-fluid px-0 bg-light">
+                <div class="container about_makasab_s py-5">
+                    <div class="row py-lg-5">
+                        <div class="col-lg-6 col-md-8 mx-auto">
+                            <h3 class="fw-bold mb-3 wow animate__animated animate__fadeInDown" data-wow-duration="1.5s" data-wow-delay=".4s">مثال الألبوم</h3>
+                            <p class="lead text-muted fw-light wow animate__animated animate__fadeInDown" data-wow-duration="1.5s" data-wow-delay=".4s">وصف قصير حول الألبوم أدناه (محتوياته ، ومنشؤه ، وما إلى ذلك). اجعله قصير ولطيف، ولكن ليست قصير جدًا حتى لا يتخطى الناس هذا الألبوم تمامًا.</p>
+                            <!-- <p>
+                           <a href="#" class="btn btn-primary my-2">الدعوة الرئيسية للعمل</a>
+                           <a href="#" class="btn btn-secondary my-2">عمل ثانوي</a>
+                           </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-
-
-        <div class="container px-4 pt-5">
-                <div class="row g-4 py-5 text-muted">
-                  <div class="col">
-          <p class="px-4">
-            إن المادة المنشورة في المنصة هي لغرض المعلومات العامة ولاينبغي اعتبارها توصية ولا تعهد من شركة فالكم بأن هذه المعلومات خالية من الأخطاء وأنه قد تنطبق بعض الرسوم والضرائب على الفرص المعروضة، وقد تمتلك شركة فالكم أو أي من تابعيها أسهماً في الفرص المعروضة. كما أن المصدرين مسؤلين مسؤولية كاملة عن صحة واكتمال البيانات المعروضة عن فرصهم المعروضة. كما أن الاستثمار في الفرص المعروضة يختلف عن إيداع مبلغ نقدي لدى بنك محلي، وأن الاستثمار في الفرص المعروضة ليس وديعة أو التزام تضمنه شركة فالكم، وأن الأداء السابق للفرص المعروضة لا يشير إلى ما سيكون عليه أداء الفرص المعروضة مستقبلاً، ولا يعد ضماناً لاستمرار نفس النتائج في المستقبل، وأن الفرص المعروضة معرضة لمخاطر خسارة الاستثمار، وقيمة أسهم الفرص المعروضة عُرضة للصعود والهبوط وقد يسترد المستثمر مبلغاً أقل من المبلغ الذي استثمره أو قد يخسره بالكامل، ويجب على المستثمرين الاطلاع على جميع التفاصيل المتعلقة بالفرص المعروضة من خلال زيارة الموقع الالكتروني للمنصة. إن الاستثمار في الفرص المعروضة في المنصة ذو مخاطر عالية وقد لا يكون ملائماً للجميع، وعلى الأشخاص الراغبين في الاستثمار في الفرص المعروضة في المنصة دراسة كافة المستندات المعروضة في المنصة عن كل فرصة يرغبون الاستثمار فيها، وفي حال تعذر فهم المحتويات يجب عليهم الأخد بمشورة مستشار مالي مرخص له. ولاتعطي هيئة السوق المالية أي تأكيد يتعلق بدقة محتويات المنصة أو الفرص المعروضة فيها أواكتمالها، وتخلي الهيئة نفسها من أي مسؤولية أو أي خسارة تنتج عما ورد في المنصة.
-          </p>
-          </div>
-          </div>
+        <div class="container marketing mt-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <!-- Three columns of text below the carousel -->
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body p-0">
+                                    <h6 class="fw-bold card-title card_title_img mb-3 text-white">طالب التمويل</h6>
+                                    <div class="row mb-3 row-cols-2 row-cols-md-4 text-center justify-content-center px-3 wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                        <div class="col">
+                                            <img alt="logo" src="/icon_1.46bb5cae.svg" class="img-fluid mx-auto">
+                                            <p> التسجيل</p>
+                                        </div>
+                                        <div class="col">
+                                            <img alt="logo" src="/icon_2.e1856a4b.svg" class="img-fluid mx-auto">
+                                            <p> أرفق ملفك التعريفي وأوراق المنشأة
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <img alt="logo" src="/icon_3.4d05d59d.svg" class="img-fluid mx-auto">
+                                            <p> أرفق معلومات مشروعك
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <img alt="logo" src="/icon_4.abb0ff0c.svg" class="img-fluid mx-auto">
+                                            <p> تحصل على الاستثمار
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                                <h6 class="pt-3 pb-2 border-top text-end px-3 mx-3"><a href="#">احصل على التمويل<i class="fa fa-chevron-left px-2"></i></a></h6>
+                            </div>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body p-0">
+                                    <h6 class="fw-bold card-title card_title_img mb-3 text-white">المستثمر</h6>
+                                    <div class="row mb-3 row-cols-2 row-cols-md-4 text-center justify-content-center px-3 wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                        <div class="col">
+                                            <img alt="logo" src="/icon_5.3c949fd2.svg" class="img-fluid mx-auto">
+                                            <p> التسجيل</p>
+                                        </div>
+                                        <div class="col">
+                                            <img alt="logo" src="/icon_6.0e15e5e4.svg" class="img-fluid mx-auto">
+                                            <p> تصفح الفرص المتاحة
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <img alt="logo" src="/icon_7.76ef2b8a.svg" class="img-fluid mx-auto">
+                                            <p> الحصول على شهادة الاستثمار
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                                <h6 class="pt-3 pb-2 border-top text-end px-3 mx-3"><a href="#" class="">إبدأ الاستثمار <i class="fa fa-chevron-left px-2"></i></a></h6>
+                            </div>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
         </div>
-
-
-
-  <footer class="mt-5 text-white" style="background-image: linear-gradient(to right bottom, #254399, #0064b2, #0082c1, #009fc6, #00bac7);">
-    <div style="background:url('/footer_bg.9885d97b.svg') center center no-repeat;" class="pt-5">
-      <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-6 col-lg-2">
-              <h5>روابط  مهمة</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">من نحن</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الشروط والاحكام</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">سياسة الخصوصية</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الأسئلة الشائعة</a></li>
-              </ul>
+        <!-- /.container -->
+        <section class="container mt-4 pb-lg-5 pb-3 text-center featured-3">
+            <h3 class="text-white wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">من فوائد التمويل العقاري الجماعي</h3>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="row g-2 g-lg-4 py-lg-5 pt-1 pb-3 row-cols-2 row-cols-lg-4 text-center wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
+                        <div class="col">
+                            <div class="feature-icon">
+                                <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                                <img alt="logo" src="/icon_8.0a3e3e08.svg" class="img-fluid mx-auto">
+                            </div>
+                            <!-- <h2>Featured title</h2> -->
+                            <p class="text-white">
+                                يوفر لك دخل شهري كما أنه يعد استثمار ثابت عند وجود تقلبات مالية واقتصادية
+                            </p>
+                        </div>
+                        <div class="col">
+                            <div class="feature-icon">
+                                <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                                <img alt="logo" src="/icon_9.abf4caf1.svg" class="img-fluid mx-auto">
+                            </div>
+                            <!-- <h2>Featured title</h2> -->
+                            <p class="text-white">
+                                خطة واضحة للتخارج في الإستثمارات العقارية محددة بزمن معين
+                            </p>
+                        </div>
+                        <div class="col">
+                            <div class="feature-icon">
+                                <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                                <img alt="logo" src="/icon_10.cd0ce792.svg" class="img-fluid mx-auto">
+                            </div>
+                            <!-- <h2>Featured title</h2> -->
+                            <p class="text-white">
+                                العائد من العقار ليس فقط من الإيجار بل إن قيمة الاستثمار الذي يزيد مع مرور الوقت
+                            </p>
+                        </div>
+                        <div class="col">
+                            <div class="feature-icon">
+                                <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                                <img alt="logo" src="/icon_11.39cd0c6b.svg" class="img-fluid mx-auto">
+                            </div>
+                            <!-- <h2>Featured title</h2> -->
+                            <p class="text-white">
+                                أي مصروف إضافي من قبل الملاك أو المستأجر على العقار يزيد من قيمته السوقية
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-      
-            <div class="col-6 col-lg-2">
-              <h5>روابط  مهمة</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">من نحن</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الشروط والاحكام</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">سياسة الخصوصية</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الأسئلة الشائعة</a></li>
-              </ul>
+        </section>
+        <div class="container px-lg-4 px-4 pt-5 pt-lg-5 pb-3">
+            <div class="row py-lg-3 py-0 text-muted">
+                <div class="col">
+                    <p class="px-0 px-lg-4 mb-0">
+                        إن المادة المنشورة في المنصة هي لغرض المعلومات العامة ولاينبغي اعتبارها توصية ولا تعهد من شركة فالكم بأن هذه المعلومات خالية من الأخطاء وأنه قد تنطبق بعض الرسوم والضرائب على الفرص المعروضة، وقد تمتلك شركة فالكم أو أي من تابعيها أسهماً في الفرص المعروضة.
+                        كما أن المصدرين مسؤلين مسؤولية كاملة عن صحة واكتمال البيانات المعروضة عن فرصهم المعروضة. كما أن الاستثمار في الفرص المعروضة يختلف عن إيداع مبلغ نقدي لدى بنك محلي، وأن الاستثمار في الفرص المعروضة ليس وديعة أو التزام تضمنه شركة فالكم،
+                        وأن الأداء السابق للفرص المعروضة لا يشير إلى ما سيكون عليه أداء الفرص المعروضة مستقبلاً، ولا يعد ضماناً لاستمرار نفس النتائج في المستقبل، وأن الفرص المعروضة معرضة لمخاطر خسارة الاستثمار، وقيمة أسهم الفرص المعروضة عُرضة للصعود والهبوط
+                        وقد يسترد المستثمر مبلغاً أقل من المبلغ الذي استثمره أو قد يخسره بالكامل، ويجب على المستثمرين الاطلاع على جميع التفاصيل المتعلقة بالفرص المعروضة من خلال زيارة الموقع الالكتروني للمنصة. إن الاستثمار في الفرص المعروضة في المنصة ذو
+                        مخاطر عالية وقد لا يكون ملائماً للجميع، وعلى الأشخاص الراغبين في الاستثمار في الفرص المعروضة في المنصة دراسة كافة المستندات المعروضة في المنصة عن كل فرصة يرغبون الاستثمار فيها، وفي حال تعذر فهم المحتويات يجب عليهم الأخد بمشورة
+                        مستشار مالي مرخص له. ولاتعطي هيئة السوق المالية أي تأكيد يتعلق بدقة محتويات المنصة أو الفرص المعروضة فيها أواكتمالها، وتخلي الهيئة نفسها من أي مسؤولية أو أي خسارة تنتج عما ورد في المنصة.
+                    </p>
+                </div>
             </div>
-      
-            <div class="col-6 col-lg-2">
-              <h5>روابط  مهمة</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">من نحن</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الشروط والاحكام</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">سياسة الخصوصية</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الأسئلة الشائعة</a></li>
-              </ul>
+        </div>
+        <footer class="mt-4 text-white" style="background-image: linear-gradient(to right bottom, #254399, #0064b2, #0082c1, #009fc6, #00bac7);">
+            <div style="background:url('/footer_bg.9885d97b.svg') center center no-repeat;" class="pt-5">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-6 col-lg-2 mb-2 px-4 px-lg-0">
+                            <h5 class="mb-3">روابط مهمة</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">من نحن</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الشروط والاحكام</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">سياسة الخصوصية</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الأسئلة الشائعة</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-2 mb-2 px-4 px-lg-0">
+                            <h5 class="mb-3">روابط مهمة</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">من نحن</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الشروط والاحكام</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">سياسة الخصوصية</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الأسئلة الشائعة</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-2 mb-2 px-4 px-lg-0">
+                            <h5 class="mb-3">روابط مهمة</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">من نحن</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الشروط والاحكام</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">سياسة الخصوصية</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">الأسئلة الشائعة</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2 px-4 px-lg-0 offset-lg-1">
+                            <h5 class="mb-3">تابعنا على</h5>
+                            <!-- <p>Monthly digest of whats new and exciting from us.</p> -->
+                            <ul class="list-unstyled d-flex">
+                                <li class="me-3 mb-2"><a class="text-white btn-primary btn-circle btn-xl" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="me-3 mb-2"><a class="text-white btn-primary btn-circle btn-xl" href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li class="me-3 mb-2"><a class="text-white btn-primary btn-circle btn-xl" href="#"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="py-4 mt-4 border-top text-center">
+                        <p class="text-white">
+                            جميع الحقوق محفوظة مملوكة لشركة مكاسب للأعمال
+                        </p>
+                    </div>
+                </div>
             </div>
-      
-            <div class="col-6 col-lg-4 offset-lg-1">
-              <form>
-                <h5>تابعنا على</h5>
-                <!-- <p>Monthly digest of whats new and exciting from us.</p> -->
-               
-                <ul class="list-unstyled d-flex">
-                  <li class="me-3"><a class="text-white btn-primary btn-circle btn-xl" href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li class="me-3"><a class="text-white btn-primary btn-circle btn-xl" href="#"><i class="fa fa-instagram"></i></a></li>
-                  <li class="me-3"><a class="text-white btn-primary btn-circle btn-xl" href="#"><i class="fa fa-facebook"></i></a></li>
-                </ul>
-              </form>
-            </div>
-          </div>
-          <div class="py-4 mt-4 border-top text-center">
-            <p>
-              جميع الحقوق محفوظة مملوكة لشركة مكاسب للأعمال
-            </p>
-          </div>
-      </div>  
-    </div>
-    </footer>
+        </footer>
     </main>
-     <script src="/src.e31bb0bc.js"></script>
-  </body>
+    <script src="/src.e31bb0bc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>wow = new WOW({
+  boxClass: 'wow',
+  // default
+  animateClass: 'animated',
+  // default
+  offset: 0,
+  // default
+  mobile: true,
+  // default
+  live: true // default
+
+});
+wow.init();</script>
+</body>
+
 </html>

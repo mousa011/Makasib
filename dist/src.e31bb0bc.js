@@ -8124,6 +8124,72 @@ var bootstrap = _interopRequireWildcard(require("bootstrap"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+// Import all plugins
+//selecting all required elements
+var dropArea = document.querySelector(".drag-area"),
+    dragText = dropArea.querySelector("header"),
+    button = dropArea.querySelector("button"),
+    input = dropArea.querySelector("input");
+var file; //this is a global variable and we'll use it inside multiple functions
+
+button.onclick = function () {
+  input.click(); //if user click on the button then the input also clicked
+};
+
+input.addEventListener("change", function () {
+  //getting user select file and [0] this means if user select multiple files then we'll select only the first one
+  file = this.files[0];
+  dropArea.classList.add("active");
+  showFile(); //calling function
+}); //If user Drag File Over DropArea
+
+dropArea.addEventListener("dragover", function (event) {
+  event.preventDefault(); //preventing from default behaviour
+
+  dropArea.classList.add("active");
+  dragText.textContent = "Release to Upload File";
+}); //If user leave dragged File from DropArea
+
+dropArea.addEventListener("dragleave", function () {
+  dropArea.classList.remove("active");
+  dragText.textContent = "Drag & Drop to Upload File";
+}); //If user drop File on DropArea
+
+dropArea.addEventListener("drop", function (event) {
+  event.preventDefault(); //preventing from default behaviour
+  //getting user select file and [0] this means if user select multiple files then we'll select only the first one
+
+  file = event.dataTransfer.files[0];
+  showFile(); //calling function
+});
+
+function showFile() {
+  var fileType = file.type; //getting selected file type
+
+  var validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //adding some valid image extensions in array
+
+  if (validExtensions.includes(fileType)) {
+    //if user selected file is an image file
+    var fileReader = new FileReader(); //creating new FileReader object
+
+    fileReader.onload = function () {
+      var fileURL = fileReader.result; //passing user file source in fileURL variable
+      // UNCOMMENT THIS BELOW LINE. I GOT AN ERROR WHILE UPLOADING THIS POST SO I COMMENTED IT
+      // let imgTag = `<img src="${fileURL}" alt="image">`; //creating an img tag and passing user selected file source inside src attribute
+
+      dropArea.innerHTML = imgTag; //adding that created img tag inside dropArea container
+    };
+
+    fileReader.readAsDataURL(file);
+  } else {
+    alert("This is not an Image File!");
+    dropArea.classList.remove("active");
+    dragText.textContent = "Drag & Drop to Upload File";
+  }
+} // var rtlcss = require('rtlcss');
+// var result = rtlcss.process("body { direction:ltr; }");
+// //result == body { direction:rtl; }
 },{"bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.esm.js"}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -8152,7 +8218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52570" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64399" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

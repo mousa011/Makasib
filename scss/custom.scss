@@ -3,11 +3,25 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
+:root { 
+    --desktop-font: 1rem /*calc(12px + .5vw)*/;
+    --mobile-font: 23px;
+    --mobile-heading: 76px;
+}
+$body-bg:#FCFCFC;
+$body-color: #254399;
+
+
+$primary: #00BAC7;
+$danger: #ff4136;
+
+$min-contrast-ratio:   2.3 !default;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-
-
+$default_gradient: linear-gradient(to right bottom, #254399, #0064b2, #0082c1, #009fc6, #00bac7);
+$default_gradient_rtl: linear-gradient(to right bottom, #00bac7, #009fc6, #0082c1, #0064b2, #254399);
 
 
 // [dir='rtl'] {
@@ -19,25 +33,36 @@
 // }
 
 
-h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+h1, h2, h3, h4, h5, h6 {font-weight: 400;}
+body, * {
+  cursor: url(~/img/circle-solid-02.svg) 15 15,auto !important;
 
+}
 body {
   font-family: 'Almarai', sans-serif !important;
-  font-size: .9rem;
-background-color:#FCFCFC; 
-}
+  font-size: var(--desktop-font);
+  overflow-x: hidden;}
+
 p {
+color:#5C5C5C;
 margin-left: 0 !important;
 margin-right: 0 !important;
 }
-
+.progress {
+  background-color: #FAFAFA ;
+  height: 25px;}
+  
+  .btn {
+    border-radius: .5rem;
+  }
+.btn-rounded {
+    border-radius: 12rem !important;
+  }
 
 
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -74,6 +99,8 @@ margin-right: 0 !important;
   height: 32rem;
 }
 
+/* footer*/
+footer .btn-primary {background-color:rgba(72, 204, 213, 0.21);}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -220,6 +247,13 @@ margin-right: 0 !important;
 
 /*custom style*/
 
+/*custom nav*/
+.nav-pills .nav-link { color:#5C5C5C; border:1px solid #E8E8E8; margin-right: .6rem; margin-bottom: .6rem;}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #04b9c7;
+    background-color: #EEFBFC;
+    border: 1px solid #00BAC7;
+}
 
 .about_makasab_s{
 background:url('~/img/graphic_2.svg');
@@ -236,22 +270,51 @@ background-attachment:initial;
 background-repeat: no-repeat;
 background-position: left top;
 background-size: auto;
-padding:1rem 0 1rem 9.8rem;
+padding:1rem 0 1.4rem 9.3rem;
 }
 
 
 .img_thumbnail_custom {margin-top: -5rem; width: 100px; height: 100px; padding: 2px;}
 
 .featured-3 {
-  background:url('~/img/graphic_4.svg') no-repeat center center; padding-top: 16rem;
+  background:url('~/img/graphic_4.svg') no-repeat center center; 
+  padding-top: 13rem;
+  height: 40em;
 }
+
+
+@media (max-width: 40em) {
+.featured-3 { padding-top: 10rem;
+}}
+
+
+@media (max-width: 44em) {
+  .featured-3 { padding-top: 11.5rem;
+  }}
 
 
 /*btn-custom*/
 .btn_custom{
-  background-image: linear-gradient(to right bottom, #00bac7, #009fc6, #0082c1, #0064b2, #254399) !important;
-  border-radius: 12rem !important;
+  background-image: $default_gradient;
 }
+
+[dir='rtl'] {
+.btn_custom{
+  background-image: $default_gradient_rtl;
+}
+}
+
+.theme_gradient {
+    background-image: $default_gradient;
+    border-radius: 1rem 1rem 0 0 !important;
+  }
+
+[dir='rtl'] {
+  .theme_gradient {
+    background-image: $default_gradient_rtl;
+  }
+}
+
 .btn-circle.btn-xl {
   width: 45px;
   height: 45px;
@@ -272,3 +335,186 @@ padding:1rem 0 1rem 9.8rem;
   display: block;
   text-align: center;
 }
+
+@media (max-width: 40em) {
+.btn-circle {
+  width: 25px;
+  height: 25px;
+  // padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.22857;
+  display: block;
+  text-align: center;
+}
+}
+
+/*ul_custom*/
+.ul_custom {
+ li { 
+   display: flex !important; 
+   width: 10rem;
+}
+}
+
+/*drag-area*/
+.drag-area{
+  border: 2px dashed #ced4da;
+  height: auto;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 2px solid #fff;
+}
+// .drag-area .icon{
+//   // font-size: 100px;
+//   // color: #fff;
+// }
+.drag-area header{
+  font-size: 30px;
+  font-weight: 500;
+  // color: #fff;
+}
+.drag-area p span, .drag-area p i{
+  color: #D8D8D8;
+}
+.drag-area button{
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*placeholder*/
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #D8D8D8;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #D8D8D8;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #D8D8D8;
+}
+
+.form-select [disabled],.form-select:invalid
+ {
+  color: #D8D8D8 !important;
+}
+
+.form-floating > label {color:#D8D8D8;}
+.form-control {
+  background-color: #fff;}
+
+.input-group-text{
+    background-color:#F8F9FA;
+  }
+
+
+/*nav_custom*/
+  .nav-link{
+    color:#6c757d;
+      }
+  .nav-link.active{
+color:#00BAC7;
+  }
+  .nav-link.disabled{
+    color:#D8D8D8;
+      }
+
+
+/*coming_soon*/
+
+.leftside, .rightside {
+
+  height:100vh;
+  width:100%;
+  // font-size:3em;
+  p {
+      font-size:1.5em; 
+  }
+  #logo_coming_soon {
+    width: 80%;
+  }
+  }
+
+  
+  
+// 768px
+  @media screen and (min-width:  991px)
+  {
+  .leftside, .rightside {
+      height:100vh;
+  }
+  }
+  
+  .leftside {
+  background:url('~/img/bg-cover.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  
+  .bg-image {
+      /* Add the blur effect */
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  width: 100%;
+  position:absolute;
+  /* Full height */
+  height: 100%; 
+  background:url('~/img/bg-cover.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  
+  
+  .rightside {
+  background:rgb(251, 251, 251);
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .rightside {
+      // background:url('~/img/bg-cover.jpg');
+      background-position: center;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    #coming-soon-header{position: relative !important; margin-bottom: 2.5rem !important;}  
+    .rightside {height: auto !important; }
+    #rightside {position:inherit !important;}
+    #graphic_5 {
+      width: 420px !important;
+    }
+  }
+  
+
+
+
+
+
+
+
